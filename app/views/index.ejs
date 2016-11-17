@@ -1,42 +1,23 @@
 <!DOCTYPE html>
-<html>
-<head>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8"/>
+			<title>Login</title>
+		</head>
+	<body>
 
-<meta charset="UTF-8" />
-<title>CSS Form</title>
+		<h1>Login</h1>
+		<form action="/auth" method="POST">
+			<div>
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" placeholder="Email">
+			</div>
 
-<link rel="stylesheet" type="text/css" href="css/main.css" />
-
-<link rel="stylesheet" type="text/css"  href="css/t1/style.css" title="Theme 1" />
-<link rel="alternate stylesheet" type="text/css"  href="css/t2/style.css" title="Theme 2" />
-
-</head>
-<body>
-
-<h1>CSS Form</h1>
-
-<form action="/auth"  method="POST">
-	<fieldset>
-		<legend>Login</legend>
-		
-		<label for="username">
-			Username
-			<input class="field" id="username" type="text" />
-		</label>
-		
-		<label for="secretword">
-			Password
-			<input class="field" id="secretword" type="password" />
-		</label>
-		
-		<label for="remember-me">
-			<input id="remember-me" type="checkbox" />
-			Remember me
-		</label>
-		
-		<input class="buttom" type="submit" value="Sign in" />
-	</fieldset>
-</form>
-
-</body>
+			<div>
+			<label for="senha">Senha</label>
+			<input type="password" id="senha" name="senha" placeholder="Senha">
+			</div>
+			<input type="submit" value="Enviar">
+		</form>
+	</body>
 </html>
